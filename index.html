@@ -4,39 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>散歩危険度チェッカー | 愛犬とのお散歩をもっと安全に</title>
-  <meta name="description" content="気温・湿度・路面温度などから愛犬の散歩の危険度を一目でチェック。今日の散歩、本当に大丈夫？">
+  <meta name="description" content="気温・湿度・日ざしから愛犬の散歩の危険度がひと目で分かります。その散歩、今日の暑さは大丈夫？">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="散歩危険度チェッカー | 愛犬とのお散歩をもっと安全に">
+  <meta property="og:description" content="気温・湿度・日ざしから愛犬の散歩の危険度がひと目で分かります。その散歩、今日の暑さは大丈夫？">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="hero">
-    <!-- TODO: キャッチコピー＋危険度スコアのビジュアルデモ -->
-    <h1>その散歩、愛犬にとって危険かもしれません。</h1>
+    <div class="hero__media">
+      <img class="hero__image" src="images/header.png" alt="日ざしの下、気持ちよさそうに散歩する犬のイラスト">
+    </div>
+    <div class="hero__content">
+      <h1>その散歩、今日の暑さは大丈夫？</h1>
+      <p class="hero__subcopy">気温・湿度・日ざしから、愛犬の散歩の危険度がひと目で分かります。</p>
+      <a class="cta-button" href="https://dognavi.github.io/dog-walk-risk-checker/?ref=lp" target="_blank" rel="noopener noreferrer">今すぐチェックする</a>
+      <p class="microcopy">無料・登録不要・インストール不要で、今すぐ使えます</p>
+    </div>
   </header>
 
   <main>
     <section class="problem">
-      <!-- TODO: 課題提起（見えない危険の訴求） -->
+      <h2>その暑さ、愛犬には大きな負担かもしれません</h2>
+
+      <div class="problem__item">
+        <h3>湿度が高いと、体温をうまく下げられない</h3>
+        <p>犬は人のように汗をかいて体を冷やすことができません。ハアハアという呼吸(パンティング)で体温を逃がしているため、湿度が高い日は、その呼吸による体温調節がうまく働きにくくなると言われています。気温だけでなく、湿度もあわせてチェックしてあげることが大切です。</p>
+      </div>
+
+      <div class="problem__item">
+        <h3>地面に近い分、照り返しの影響を受けやすい</h3>
+        <p>犬は私たちよりずっと地面に近い場所を歩いています。そのため、アスファルトなどからの照り返しや地面の熱を、人よりも受けやすいと言われています。「今日はそこまで暑くない」と人が感じる日でも、犬の足元は、もっと暑くなっているかもしれません。</p>
+      </div>
+
+      <div class="problem__item">
+        <h3>犬は、つらくても我慢してしまいます</h3>
+        <p>犬は言葉で「暑い」「つらい」と伝えることができません。多少無理をしていても、飼い主さんと一緒にいたい一心で、そのまま歩き続けてしまうことがあります。だからこそ、愛犬が我慢する前に、飼い主さんの方から「今日は大丈夫かな?」と確かめてあげたいですね。</p>
+      </div>
     </section>
 
     <section class="features">
-      <!-- TODO: 機能紹介（気温・湿度・路面温度・紫外線・時間帯 等） -->
+      <h2>今日、散歩に出て大丈夫かが、ひと目でわかります</h2>
+      <p class="features__lead">難しい入力は必要ありません。今いる場所の気温・湿度・日ざしから、散歩の危険度をすぐに確認できます。</p>
+
+      <ol class="features__steps">
+        <li><strong>開く</strong> ― 「散歩危険度チェッカー」を開きます</li>
+        <li><strong>位置情報を許可する</strong> ― 今いる場所の空の状態を取得します</li>
+        <li><strong>結果を見る</strong> ― 今日の散歩の危険度がすぐに表示されます</li>
+      </ol>
+
+      <div class="features__screenshot-frame">
+        <div class="features__screenshot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        <img class="features__screenshot" src="images/screenshot.png" alt="散歩危険度チェッカーの画面。気温・湿度などの気象データと散歩リスク判定が表示されている">
+      </div>
+      <p class="features__caption">実際の画面です</p>
     </section>
 
-    <section class="how-it-works">
-      <!-- TODO: 使い方（3ステップ） -->
-    </section>
-
-    <section class="trust">
-      <!-- TODO: 信頼性・根拠（WBGT指数など） -->
-    </section>
-
-    <section class="cta">
-      <!-- TODO: CTA（今すぐチェックする） -->
+    <section class="cta-closing">
+      <div class="cta-closing__media">
+        <img class="cta-closing__image" src="images/footer.png" alt="こちらを向いて笑っている犬のイラスト">
+      </div>
+      <div class="cta-closing__content">
+        <h2>その散歩、今日の暑さは大丈夫？</h2>
+        <a class="cta-button" href="https://dognavi.github.io/dog-walk-risk-checker/?ref=lp" target="_blank" rel="noopener noreferrer">今すぐチェックする</a>
+        <p class="microcopy">無料・登録不要・インストール不要で、今すぐ使えます</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <!-- TODO: フッター -->
+  <footer class="site-footer">
+    <p>&copy; 2025-2026 わんグル【ペット店内可ナビ】 All Rights Reserved. 無断転載禁止.</p>
   </footer>
 
   <script src="js/script.js"></script>
